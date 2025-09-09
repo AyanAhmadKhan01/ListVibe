@@ -87,7 +87,7 @@ export default function TodoAPP() {
             </div>
         </form>
 
-    {value.map((todo, i) => (
+    {value?.map((todo, i) => (
   <div className="flex m-4 border-2 border-green-500 p-5 rounded-3xl max-w-[500px] w-[100%]" key={i}>
     <h1>{todo.text}</h1>
     <h2>{format(new Date (todo.createdAT), "dd MMM yyy" )}</h2>
